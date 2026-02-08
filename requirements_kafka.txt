@@ -1,0 +1,6 @@
+# Kafka client library for consuming from Event Hub via Kafka protocol
+confluent-kafka==2.3.0
+
+# Azure libraries (same as Event Hub SDK version)
+azure-identity
+azure-monitor-ingestion
