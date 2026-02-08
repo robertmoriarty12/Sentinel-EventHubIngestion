@@ -11,17 +11,17 @@ import sys
 # Event Hub (via Kafka) Configuration
 EVENTHUB_NAMESPACE = "rmoriarty.servicebus.windows.net"
 EVENTHUB_NAME = "testhub2"
-EVENTHUB_CONNECTION_STRING = "Endpoint=sb://rmoriarty.servicebus.windows.net/;SharedAccessKeyName=2;SharedAccessKey=xh6biuCUkiVpb7uqqv2jnw/WNhx1VyBc4+AEhJbXT2A=;EntityPath=testhub2"
+EVENTHUB_CONNECTION_STRING = ""
 CONSUMER_GROUP = "$Default"  # Kafka calls this 'group.id'
 
 # Azure AD App Registration credentials
-TENANT_ID = "d101101f-3558-4acd-8438-21759bb989e4"          # From Azure AD App Registration
-CLIENT_ID = "e70a5644-8117-44ce-a77d-dbccbf997ca8"          # From Azure AD App Registration
-CLIENT_SECRET = "xtA8Q~xyDyc4UgwIO3K04zL2GXPItaZIreQyyaCR"  # From Azure AD App Registration
+TENANT_ID = ""          # From Azure AD App Registration
+CLIENT_ID = ""          # From Azure AD App Registration
+CLIENT_SECRET = ""  # From Azure AD App Registration
 
 # Data Collection Endpoint and Rule (from ARM template deployment outputs)
 DCE_ENDPOINT = "https://eventhub-dce-7856-5wdo.centralus-1.ingest.monitor.azure.com"     # e.g., https://testdata-dce-xxx.region.ingest.monitor.azure.com
-DCR_ID = "dcr-bcbd6428c1b24271a4dd423e90e654f8"           # e.g., dcr-xxxxxxxxxxxxxxxxxxxxxxxxxx
+DCR_ID = ""           # e.g., dcr-xxxxxxxxxxxxxxxxxxxxxxxxxx
 STREAM_NAME = "Custom-EventHubData_CL"  # Custom table name
 
 # Time filter settings
@@ -241,3 +241,4 @@ if __name__ == "__main__":
         print("\nSee the README for detailed setup instructions.")
     else:
         consume_kafka_and_send_to_sentinel()
+
