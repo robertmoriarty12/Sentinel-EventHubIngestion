@@ -13,9 +13,9 @@ EVENTHUB_CONNECTION_STRING = "Endpoint=sb://rmoriarty.servicebus.windows.net/;Sh
 CONSUMER_GROUP = "$Default"
 
 # Azure AD App Registration credentials
-TENANT_ID = "d101101f-3558-4acd-8438-21759bb989e4"          # From Azure AD App Registration
-CLIENT_ID = "e70a5644-8117-44ce-a77d-dbccbf997ca8"          # From Azure AD App Registration
-CLIENT_SECRET = "xtA8Q~xyDyc4UgwIO3K04zL2GXPItaZIreQyyaCR"  # From Azure AD App Registration
+TENANT_ID =        # From Azure AD App Registration
+CLIENT_ID =         # From Azure AD App Registration
+CLIENT_SECRET =  # From Azure AD App Registration
 
 # Data Collection Endpoint and Rule (from ARM template deployment outputs)
 DCE_ENDPOINT = "https://eventhub-dce-7856-5wdo.centralus-1.ingest.monitor.azure.com"     # e.g., https://testdata-dce-xxx.region.ingest.monitor.azure.com
@@ -249,3 +249,4 @@ if __name__ == "__main__":
         print("\nSee the README for detailed setup instructions.")
     else:
         consume_eventhub_and_send_to_sentinel()
+
