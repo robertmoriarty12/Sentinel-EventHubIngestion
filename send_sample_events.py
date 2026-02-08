@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import json
 
 # Your Event Hub connection string
-CONNECTION_STRING = "Endpoint=sb://rmoriarty.servicebus.windows.net/;SharedAccessKeyName=2;SharedAccessKey=xh6biuCUkiVpb7uqqv2jnw/WNhx1VyBc4+AEhJbXT2A=;EntityPath=testhub2"
+CONNECTION_STRING = ""
 
 def send_sample_events():
     """
@@ -63,3 +63,4 @@ def send_sample_events():
 
 if __name__ == "__main__":
     send_sample_events()
+
