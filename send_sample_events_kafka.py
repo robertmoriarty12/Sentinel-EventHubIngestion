@@ -5,7 +5,7 @@ import json
 # Event Hub Configuration (via Kafka)
 EVENTHUB_NAMESPACE = "rmoriarty.servicebus.windows.net"
 EVENTHUB_NAME = "testhub2"
-EVENTHUB_CONNECTION_STRING = "Endpoint=sb://rmoriarty.servicebus.windows.net/;SharedAccessKeyName=2;SharedAccessKey=xh6biuCUkiVpb7uqqv2jnw/WNhx1VyBc4+AEhJbXT2A=;EntityPath=testhub2"
+EVENTHUB_CONNECTION_STRING = ""
 
 def delivery_report(err, msg):
     """Callback for message delivery reports"""
@@ -99,3 +99,4 @@ if __name__ == "__main__":
         print("  - EVENTHUB_CONNECTION_STRING")
     else:
         send_sample_events_kafka()
+
